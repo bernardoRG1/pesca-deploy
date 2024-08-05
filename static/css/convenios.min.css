@@ -258,7 +258,8 @@ body {
     }
 
     #title_id {
-        font-size: 2.2rem;
+        margin-top: -30px;
+        font-size: 2rem;
     }
  
     .header_subtitle {
