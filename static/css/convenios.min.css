@@ -252,13 +252,13 @@ body {
     .header_title {
         overflow: hidden;
         max-width: 100% ;
-
+        font-size: 3rem;
         letter-spacing: -1px
 
     }
 
     #title_id {
-        font-size: 1.9rem;
+        font-size: 2.2rem;
     }
  
     .header_subtitle {
@@ -287,7 +287,7 @@ body {
 
 @media (max-width: 599px) {
     .header_title {
-            font-size:3rem;
+            font-size: 3rem;
         
             letter-spacing: -1px
         }
