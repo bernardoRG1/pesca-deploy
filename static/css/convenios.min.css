@@ -1,0 +1,445 @@
+body {
+    overflow-x: hidden;
+}
+
+.header {
+   position: relative
+}
+
+.header_bg {
+   width: 100%;
+   height: 80vh;
+}
+
+
+.wave {
+
+
+    position: absolute;
+    background-image: url("../images/WAVE.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 140px;
+    bottom: -20px;
+
+}
+
+
+.footer_contacto_social a {
+    margin-left: -4px;
+}
+.header_title {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   color: #fff;
+   font-family: 'Kumbh Sans',sans-serif;
+   font-weight: 900;
+   mix-blend-mode: overlay;
+   text-align: center;
+   width: 90%;
+}
+.header_subtitle {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-family: 'Kumbh Sans',sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 90%;
+ }
+
+/* convenios main */
+.restaurantes, .educacion, .deportes {
+    margin: auto;
+    width: 90%;
+}
+
+.title {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #0173bb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.restaurante-icon {
+    background-image: url("../images/restaurante-icon.jpg");
+}
+
+.deportes-icon {
+    background-image: url('../images/DEPORTES-ICON.webp');
+}
+
+.educacion-icon {
+    background-image: url('../images/EDUCACION.webp');
+}
+
+.restaurantes-container {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.row {
+    padding-top: 30px;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    border-bottom: 2px solid #eaeaea;
+    flex-wrap: wrap;
+}
+
+.row-element {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 350px;
+}
+
+.row-element picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.element-title {
+    padding-top: 10px;
+    font-family: "Manrope";
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #0174bb;
+    min-height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.element-desc {
+    margin-top: 5px;
+    font-family: "Manrope";
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-height: 140px; 
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+
+.nutricenter-desc {
+    width: 380px;
+}
+
+.education-container .education-first .row-element {
+    width: 32%;
+}
+
+.education-container .education-last {
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.education-container .education-last .row-element, .salud-container .salud-last .row-element {
+    width: 30%;
+}
+
+.salud-icon {
+    background-image: url("../images/salud.webp");
+}
+
+.salud-container .salud-first, .salud-container .salud-last {
+    justify-content: center;
+    column-gap: 30px;
+    padding-bottom: 40px;
+}
+
+.salud-container .salud-first .row-element {
+    width: 32%;
+}
+
+.otros-container .final-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.otros-container .final-row p {
+    font-family: "Manrope";
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.otros-container .final-row  {
+    border: NONE;
+}
+
+
+.proveedores {
+   font-family: 'Kumbh Sans',sans-serif
+}
+
+.proveedores_icon {
+   width: 6rem;
+   margin: auto;
+   margin-bottom: 1rem
+}
+
+.proveedores__t1,.proveedores__t2 {
+   color: #013174;
+   font-weight: 900;
+   text-align: center;
+   margin: auto
+}
+
+.proveedores__t3 {
+   color: #313233;
+   text-align: center
+}
+
+.proveedores__t3 a {
+   text-decoration: none;
+   color: #313233;
+   font-weight: 900
+}
+
+.copyright,.footer {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+   background-color: #228ccd
+
+}
+
+[data-aos] {
+    opacity: 0;
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  [data-aos].aos-out {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+
+  @media (max-width: 598px) and (min-width:100px) {
+    .header_title {
+        overflow: hidden;
+        max-width: 100% ;
+
+        letter-spacing: -1px
+
+    }
+
+    #title_id {
+        font-size: 1.9rem;
+    }
+ 
+    .header_subtitle {
+     top: 65%;
+     font-size: .7rem;
+     max-width: 100%;
+    }
+
+    .title {
+        font-size: 1px;
+        max-width: 100%;
+    }
+    .row-element , .education-container .education-first .row-element, .education-container .education-last .row-element, .salud-container .salud-last .row-element,     .salud-container .salud-first .row-element {
+        width: calc(90%);
+        margin-bottom: 20px;
+        margin: auto;
+    }
+
+
+
+    .nutricenter-desc {
+        width: 90%;
+        margin: auto;
+    }
+ }
+
+@media (max-width: 599px) {
+    .header_title {
+            font-size:3rem;
+        
+            letter-spacing: -1px
+        }
+    
+        .header_subtitle {
+        top: 65%;
+        font-size: .7rem;
+        max-width: 100%;
+        }
+
+        .title {
+            font-size: 2rem;
+            max-width: 100%;
+        }
+    .proveedores .content {
+        padding-bottom: 6rem
+    }
+
+   .proveedores__t1,.proveedores__t2 {
+       font-size: 1.5rem;
+       max-width: 40rem;
+       margin-bottom: 1rem
+   }
+
+   .proveedores__t3 {
+       font-size: 1.2rem
+   }
+
+     .nutricenter-desc {
+        width: 100%;
+    }
+}
+
+@media (max-width: 899px) and (min-width:600px) {
+   .header_title {
+       font-size:3rem;
+    
+       letter-spacing: -1px
+   }
+
+   .header_subtitle {
+    top: 65%;
+   }
+
+   .proveedores .content {
+       padding-bottom: 6rem
+   }
+
+   .proveedores__t1,.proveedores__t2 {
+       font-size: 1.6rem;
+       max-width: 40rem;
+       margin-bottom: 1rem
+   }
+
+   .proveedores__t3 {
+       font-size: 1.2rem
+   }
+
+   .row-element , .education-container .education-first .row-element, .education-container .education-last .row-element, .salud-container .salud-last .row-element,.salud-container .salud-first .row-element {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    
+    }
+
+    .restaurantes-container .restaurantes-last {
+        padding-bottom: 50px;
+    }
+
+    
+
+    .nutricenter-desc {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width:900px) {
+   .header_title {
+       font-size:3.6rem;
+       letter-spacing: -2px
+   }
+
+   .proveedores .content {
+       padding-bottom: 8rem
+   }
+
+   .proveedores__t1,.proveedores__t2 {
+       font-size: 2rem;
+       max-width: 40rem;
+       margin-bottom: 1rem
+   }
+
+   .proveedores__t3 {
+       font-size: 1.5rem
+   }
+
+   .row-element , .education-container .education-first .row-element, .education-container .education-last .row-element, .salud-container .salud-last .row-element,.salud-container .salud-first .row-element {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    
+    }
+
+    .row {
+        justify-content: center;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 1399px) and (min-width:1200px) {
+   .header_title {
+       font-size:4rem;
+       letter-spacing: -2px
+   }
+
+   .proveedores .content {
+       padding-bottom: 8rem
+   }
+
+   .proveedores__t1,.proveedores__t2 {
+       font-size: 2rem;
+       max-width: 40rem;
+       margin-bottom: 1rem
+   }
+
+   .proveedores__t3 {
+       font-size: 1.5rem
+   }
+}
+
+@media (min-width: 1400px) {
+   .header_title {
+       font-size:5.3rem;
+       letter-spacing: -2px
+   }
+   .header_subtitle {
+        font-size: 1.3rem;
+   }
+
+   .proveedores .content {
+       padding-bottom: 10rem
+   }
+
+   .proveedores__t1,.proveedores__t2 {
+       font-size: 2.5rem;
+       max-width: 45rem;
+       margin-bottom: 1rem
+   }
+
+   .proveedores__t3 {
+       font-size: 1.8rem
+   }
+
+
+}
