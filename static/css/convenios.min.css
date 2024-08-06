@@ -461,6 +461,19 @@ body {
    .proveedores__t3 {
        font-size: 1.8rem
    }
+   #zona-desc {
+ 
+    position: initial;
+    left: 10px;
+}
+
+}
 
 
+
+@media (max-width: 1300px) {
+    #zona-desc {
+        left: 0px;
+        position: initial;
+    }
 }
