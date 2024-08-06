@@ -248,6 +248,10 @@ body {
     transform: translateY(20px); 
   }
 
+
+  .header_bg {
+    object-fit: cover;
+}
   @media (max-width: 598px) and (min-width:100px) {
     .header_title {
         overflow: hidden;
@@ -284,6 +288,8 @@ body {
         width: 90%;
         margin: auto;
     }
+
+
  }
 
 @media (max-width: 599px) {
