@@ -193,7 +193,10 @@ body {
 .otros-container .final-row p {
     font-family: "Manrope";
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 1.2rem;
+
 }
 
 .otros-container .final-row  {
@@ -256,7 +259,10 @@ body {
   .header_bg {
     object-fit: cover;
 
-}
+  }
+  
+
+ 
   @media (max-width: 598px) and (min-width:100px) {
     .header_title {
         overflow: hidden;
@@ -285,6 +291,7 @@ body {
         width: calc(90%);
         margin-bottom: 20px;
         margin: auto;
+        max-width: 100%;
     }
 
 
@@ -298,6 +305,7 @@ body {
  }
 
 @media (max-width: 599px) {
+  
     .header_title {
             font-size: 3rem;
         
@@ -328,9 +336,35 @@ body {
        font-size: 1.2rem
    }
 
-     .nutricenter-desc {
+    .nutricenter-desc {
         width: 100%;
     }
+
+
+    .otros-container .final-row p {
+        font-size: .9rem;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #wahoo-el #wahoo-desc {
+
+        left: 0px;
+    }
+
+    #zona-desc, #open-desc, #wahoo-desc, #nationalcar-desc, #suburbia-desc {
+        width: 100%;
+        left: 0px;
+        right: 0px;
+        overflow: hidden;
+        position: initial;
+     
+    }
+
+
+    
+
 }
 
 @media (max-width: 899px) and (min-width:600px) {
@@ -401,10 +435,7 @@ body {
     
     }
 
-    #wahoo-desc {
-        left: 0;
-        position: initial;
-    }
+
     #suburbia-desc {
         right: 0;
         position: initial;
@@ -418,7 +449,7 @@ body {
 
 }
 
-@media (max-width: 1399px) and (min-width:1200px) {
+@media (max-width: 1499px) and (min-width:1200px) {
    .header_title {
        font-size:4rem;
        letter-spacing: -2px
@@ -436,6 +467,14 @@ body {
 
    .proveedores__t3 {
        font-size: 1.5rem
+   }
+
+   #zona-desc {
+    max-width: 90%;
+   }
+
+   #zona-desc br {
+    display: none;
    }
 }
 
@@ -464,16 +503,10 @@ body {
    #zona-desc {
  
     position: initial;
-    left: 10px;
 }
 
 }
 
 
 
-@media (max-width: 1300px) {
-    #zona-desc {
-        left: 0px;
-        position: initial;
-    }
-}
+
